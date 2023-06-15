@@ -1,0 +1,26 @@
+PROJEDE ÝZLENEN ADIMLAR
+
+1) Projede js.devexpress kütüphanesiyle bir react.js uygulamasý ve HTML/CSS ile bir arayüz tasarýmý yapýlmasý istendi.
+
+2) Datagrid’in ana baþlýklarý data.js dosyasýnda ‘headers’ isimli listede tutuldu.
+
+3) Uygulama bileþenlerden oluþmakta. Uygulamada datagrid’e veri ekleme seçeneði bulunduðu için ‘Box’ adýnda bir bileþen oluþturuldu. 
+
+4) Kullanýcýnýn verileri ‘currentUser’ isminde bir state’de tutuldu.
+
+5) currentUser state’i hem ‘App’ bileþeninde hem de onun alt bileþeni olan ‘Box’ bileþeninde kullanýlýp deðiþtirilebildiði için contextAPI’da tanýmlandý. 
+Bu sayede alt bileþenden üst bileþene veri aktarýmý saðlandý.
+
+6) Kullanýcýnýn verileri localStorage’da depolanýp buradan çekilebilsin diye currentUser state’i tanýmlandýðýnda ve her deðiþime uðradýðýnda, 
+useEffect() ile localStorage’a ‘DataGridUser’ isminde bir liste oluþturulup deðeri buraya atandý.
+
+7) Box bileþeninde doldurulan inputlarý kaydetmek için ‘inputs’ isminde bir object state oluþturuldu. 
+Kullanýcý ‘kaydet’ butonuna bastýðýnda inputs objecti, contextAPI’da tanýmlanan currentUser state’ine atanýyor.
+
+8) Kullanýcý ‘Yeni hesap ekle’ butonuna bastýðýnda 'Box' bileþeninin ekranda görünebilmesi, ‘showBox’ boolean state’i koþuluna baðlandý.
+
+9) Projenin responsive olabilmesi için 'global.scss' dosyasýnda ‘mobile’ fonksiyonu ve ‘width’ deðiþkeni tanýmlanýp diðer scss dosyalarýndan import edildi.
+
+Not: HTML/CSS tasarýmý HTML_CSS_version klasörünün içerisinde bulunmaktadýr.
+
+

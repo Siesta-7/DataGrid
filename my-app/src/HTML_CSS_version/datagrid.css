@@ -1,0 +1,343 @@
+.home{
+    padding: 30px 40px;
+    background-color: rgba(175, 201, 250, 0.144);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+@media only screen and (max-width: 600px) {
+    .home{
+        padding: 5px 10px;
+        gap: 15px;
+        height: 100vh;
+    }
+    .top {
+
+      flex-direction: column-reverse;  
+      gap: 10px;
+    }
+    
+  }
+
+.top_left{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.top_search{
+    display: flex;
+    width: 310px;
+    height: 35px;   
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+
+.top_input{
+    width: 250px;
+    padding: 0 15px;
+    border: none;
+    
+}
+.top_input:focus{
+    outline: none;
+}
+
+.top_search_icon{
+    width: 40px;
+    height: 35px;
+    background-color: rgba(74, 32, 226, 0.61);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+
+.top_filter{
+    width: 45px;
+    height: 35px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    color: rgba(74, 32, 226, 0.61);
+    cursor: pointer;
+    
+}
+
+
+.top_button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 145px;
+    height: 35px;
+    padding: 0 15px;
+    border-radius: 20px;
+    background-color: rgba(74, 32, 226, 0.61);
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+    .top_button{
+        display: none;
+    }
+}
+
+table, th, td {
+    border: 1px solid rgba(175, 201, 250, 0.144);
+    border-collapse: collapse;
+    padding-left: 40px;
+  }
+  th{
+    background-color: white;
+    text-align: left;
+    font-size: 14px;
+    border-right:2px solid rgba(180, 175, 250, 0.377);
+    border-left:2px solid rgba(180, 175, 250, 0.377);
+    
+  }
+  @media only screen and (max-width: 600px) {
+    td{
+        font-size: 8px;
+        
+    }
+    th{
+        font-size: 12px;
+    }
+    table, td, th{
+        padding: 5px;
+        
+    }
+}
+
+  th:last-child{
+    width: 45%;
+  }
+
+  table{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+   
+  }
+  td {
+    border-right:2px solid rgba(180, 175, 250, 0.377);
+    border-left:2px solid rgba(180, 175, 250, 0.377);
+    font-size: 13px;
+  }
+
+ 
+  tr{
+    height: 50px;
+    border: none;
+  }
+  
+  tr:first-child{
+    border-bottom: 3px solid rgba(175, 201, 250, 0.144);
+  }
+  tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.678);
+  }
+  tr:nth-child(odd){
+    background-color: rgba(175, 201, 250, 0);
+  }
+
+.bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bottom_left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.bottom_left span:first-child{
+
+    color: rgba(74, 32, 226, 0.61);
+    font-weight: 600;
+}
+  .bottom_left span:last-child{
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 20px;
+    height: 30px;
+    width: 70px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    
+  }
+.scroll{
+    
+    font-weight: 800; 
+    color: rgba(74, 32, 226, 0.61);
+    cursor: pointer;
+}
+.bottom_right{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.bottom_right_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 30px;
+    background-color: white;
+    border-radius: 5px;
+
+}
+.before{
+    color: #55555548;
+    
+}
+.next{
+    color: rgba(74, 32, 226, 0.61);
+    cursor: pointer;
+}
+
+.secondbutton{
+
+    display: none;
+    
+}
+
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+}
+.add{
+    position: relative;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    width: 300px;
+    height:310px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 1px 8px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 8px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 8px -1px rgba(0,0,0,0.75)
+}
+@media only screen and (max-width: 600px) {
+    .box{
+        margin-top: 10px;
+    }
+    .add{
+        padding: 20px;
+        height: 200px;
+        gap: 10px;
+    }
+    .secondbutton{
+        display: flex;
+    }
+}
+
+.closeIcon{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    color: #555;
+}
+.add_inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+}
+
+.add_inputs label{
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+}
+.add_input{
+    width: 80%;
+    height: 30px;
+    border-radius: 30px;
+    border: 1px solid lightgrey;
+    padding: 0 10px;
+}
+
+.add_input:focus{
+    outline: none;
+
+}
+.add_inputs label{
+    padding-left: 10px;
+}
+@media only screen and (max-width: 600px) {
+    .add_input{
+        height: 20px;
+    }
+    .add_inputs label{
+        font-size: 12px;
+    }
+    
+}
+.add_buttons{
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    width: 80%;
+    margin-top: 20px;
+}
+@media only screen and (max-width: 600px) {
+    .add_buttons{
+        width: 80%;
+        margin-top: 5px;
+    }
+}
+
+.add_button{
+    padding: 8px 15px;
+    border-radius: 15px;
+    border: none;
+    font-weight: 600;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+
+.cancel{
+    background-color: rgba(0, 81, 255, 0.158);
+    color: rgba(74, 32, 226, 0.61);
+}
+
+.save{
+    background-color: rgba(74, 32, 226, 0.61);
+    color: white;
+}
+

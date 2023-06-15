@@ -1,0 +1,85 @@
+@import "./global.scss";
+
+.App{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    
+    .dx-datagrid{
+        padding: 20px 30px 0;
+
+        @include mobile{
+            padding: 20px 10px 0;
+            width: 100vw;
+        } 
+        
+    }
+    .dx-texteditor-container{
+        display: flex;
+        
+        @include mobile{
+            height: 25px;
+            align-items: center;
+            font-size: 12px;
+        }
+    }
+    
+
+    .dx-datagrid-search-panel{
+         margin: 0;    
+    }
+
+    .dx-toolbar-after{
+        position: absolute;
+        left: 0;
+        padding-left: 0 !important;
+               
+        .dx-searchbox{
+            width: 28vw !important;
+            border-radius: 50px;
+            
+          
+        }
+    }
+
+    .dx-datagrid-text-content{
+        color: black;
+        font-weight: 700;
+        
+    }
+   
+ 
+    .buttonAdd{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        right: 40px;
+        top: 20px;
+        z-index: 5; 
+        padding: 9px 13px;
+        border-radius: 20px;
+        border: none;
+        background-color:  blueviolet;
+        color: white;
+        font-size: 11px;
+        cursor: pointer;
+        @include mobile{
+            padding: 6px 7px;
+            font-size: 8px;
+            top: 27px;
+        }
+
+        .plus {
+            font-size: 14px;
+
+            @include mobile{
+                
+                font-size: 10px;
+                
+            }         
+        }     
+       
+    }
+
+}

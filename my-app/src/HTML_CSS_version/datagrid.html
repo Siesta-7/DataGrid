@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link href="./datagrid.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+        <style>
+            * {
+                margin: 0
+            }
+            
+            </style>
+        <title>DataGrid</title>
+    </head>
+
+<body>
+    <div class="home" >
+        <div class="top"> 
+            <div class="top_left">
+                <div class="top_search">
+                    <input class="top_input" placeholder="Search objects..." />
+                    <div class="top_search_icon" ><i class="material-icons" >search</i></div>                     
+                </div>
+                <div class="top_filter"><i class="material-icons">filter_alt</i></div>
+                
+            </div>
+            <div class="top_right">
+                <button class="top_button">
+                    <i class="material-icons plus" style="font-size: 16px;">add</i>
+                Yeni Hesap Ekle</button>
+            </div>
+            
+        </div>
+        <div class="grid">
+            <table >
+                <tr>
+                    <th>Sosyal Medya Linki</th>
+                    <th>Sosyal Medya Adı</th>
+                    <th>Açıklama</th>
+                </tr>
+                <tr>
+                    <td>instagram.com</td>
+                    <td>instagram</td>
+                    <td>We'll help you finish your projects successfully.</td>
+                </tr>
+                <tr>
+                    <td>linkedin.com</td>
+                    <td>linkedin</td>
+                    <td>Hire vetted developers from Rast Mobile to scale up your tech projects.</td>
+                </tr>
+                <tr>
+                    <td>behance.com</td>
+                    <td>behance</td>
+                    <td>Software Development Agency Rast Mobile Information Technology Ltd. </td>
+                </tr>
+                <tr>
+                    <td>twitter.com</td>
+                    <td>twitter</td>
+                    <td>Software Development Agency Rast Mobile Information Technology Ltd.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            
+        </div>
+        <div class="bottom">
+            <div class="bottom_left">
+                <span>Show:</span>
+                <span>4 rows <i class="material-icons scroll" >unfold_more</i></span>
+            </div>
+            <div class="bottom_right">
+                <i class="material-icons before">navigate_before</i> 
+                <div class="bottom_right_box">1</div>
+                <span style="color:#55555548;">of</span>
+                <span>4</span>     
+                <i class="material-icons next">navigate_next</i>        
+            </div>
+        </div>
+        
+        <div class="box">
+            <button class="top_button secondbutton">
+                <i class="material-icons plus" style="font-size: 16px;">add</i>
+            Yeni Hesap Ekle</button>
+            <div class="add">
+                <i class="material-icons closeIcon">close</i>
+                <div class="add_inputs">
+                    <label>Sosyal Medya Linki</label>
+                    <input class="add_input" />
+                </div>
+                <div class="add_inputs">
+                    <label>Sosyal Medya Adı</label>
+                    <input class="add_input" />
+                </div>
+                <div class="add_inputs">
+                    <label>Açıklama</label>
+                    <input class="add_input" />    
+                </div>
+                <div class="add_buttons">
+                    <button class="add_button cancel">Vazgeç</button>
+                    <button class="add_button save">Kaydet</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+</html>
