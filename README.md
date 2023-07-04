@@ -1,7 +1,7 @@
 
 # Datagrid
 
-Rast Mobile Task Datagrid Uygulaması
+Datagrid Uygulaması
 
 
 ## Getting Started 
