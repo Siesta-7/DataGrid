@@ -1,26 +1,26 @@
-PROJEDE İZLENEN ADIMLAR
+PROJEDE Ä°ZLENEN ADIMLAR
 
-1) Projede js.devexpress kütüphanesiyle bir react.js uygulaması ve HTML/CSS ile bir arayüz tasarımı yapılması istendi.
+1) Projede js.devexpress kÃ¼tÃ¼phanesiyle bir react.js uygulamasÄ± ve HTML/CSS ile bir arayÃ¼z tasarÄ±mÄ± yapÄ±ldÄ±.
 
-2) Datagrid’in ana başlıkları data.js dosyasında ‘headers’ isimli listede tutuldu.
+2) Datagridâ€™in ana baÅŸlÄ±klarÄ± data.js dosyasÄ±nda â€˜headersâ€™ isimli listede tutuldu.
 
-3) Uygulama bileşenlerden oluşmakta. Uygulamada datagrid’e veri ekleme seçeneği bulunduğu için ‘Box’ adında bir bileşen oluşturuldu. 
+3) Uygulama bileÅŸenlerden oluÅŸmakta. Uygulamada datagridâ€™e veri ekleme seÃ§eneÄŸi bulunduÄŸu iÃ§in â€˜Boxâ€™ adÄ±nda bir bileÅŸen oluÅŸturuldu. 
 
-4) Kullanıcının verileri ‘currentUser’ isminde bir state’de tutuldu.
+4) KullanÄ±cÄ±nÄ±n verileri â€˜currentUserâ€™ isminde bir stateâ€™de tutuldu.
 
-5) currentUser state’i hem ‘App’ bileşeninde hem de onun alt bileşeni olan ‘Box’ bileşeninde kullanılıp değiştirilebildiği için contextAPI’da tanımlandı. 
-Bu sayede alt bileşenden üst bileşene veri aktarımı sağlandı.
+5) currentUser stateâ€™i hem â€˜Appâ€™ bileÅŸeninde hem de onun alt bileÅŸeni olan â€˜Boxâ€™ bileÅŸeninde kullanÄ±lÄ±p deÄŸiÅŸtirilebildiÄŸi iÃ§in contextAPIâ€™da tanÄ±mlandÄ±. 
+Bu sayede alt bileÅŸenden Ã¼st bileÅŸene veri aktarÄ±mÄ± saÄŸlandÄ±.
 
-6) Kullanıcının verileri localStorage’da depolanıp buradan çekilebilsin diye currentUser state’i tanımlandığında ve her değişime uğradığında, 
-useEffect() ile localStorage’a ‘DataGridUser’ isminde bir liste oluşturulup değeri buraya atandı.
+6) KullanÄ±cÄ±nÄ±n verileri localStorageâ€™da depolanÄ±p buradan Ã§ekilebilsin diye currentUser stateâ€™i tanÄ±mlandÄ±ÄŸÄ±nda ve her deÄŸiÅŸime uÄŸradÄ±ÄŸÄ±nda, 
+useEffect() ile localStorageâ€™a â€˜DataGridUserâ€™ isminde bir liste oluÅŸturulup deÄŸeri buraya atandÄ±.
 
-7) Box bileşeninde doldurulan inputları kaydetmek için ‘inputs’ isminde bir object state oluşturuldu. 
-Kullanıcı ‘kaydet’ butonuna bastığında inputs objecti, contextAPI’da tanımlanan currentUser state’ine atanıyor.
+7) Box bileÅŸeninde doldurulan inputlarÄ± kaydetmek iÃ§in â€˜inputsâ€™ isminde bir object state oluÅŸturuldu. 
+KullanÄ±cÄ± â€˜kaydetâ€™ butonuna bastÄ±ÄŸÄ±nda inputs objecti, contextAPIâ€™da tanÄ±mlanan currentUser stateâ€™ine atanÄ±yor.
 
-8) Kullanıcı ‘Yeni hesap ekle’ butonuna bastığında 'Box' bileşeninin ekranda görünebilmesi, ‘showBox’ boolean state’i koşuluna bağlandı.
+8) KullanÄ±cÄ± â€˜Yeni hesap ekleâ€™ butonuna bastÄ±ÄŸÄ±nda 'Box' bileÅŸeninin ekranda gÃ¶rÃ¼nebilmesi, â€˜showBoxâ€™ boolean stateâ€™i koÅŸuluna baÄŸlandÄ±.
 
-9) Projenin responsive olabilmesi için 'global.scss' dosyasında ‘mobile’ fonksiyonu ve ‘width’ değişkeni tanımlanıp diğer scss dosyalarından import edildi.
+9) Projenin responsive olabilmesi iÃ§in 'global.scss' dosyasÄ±nda â€˜mobileâ€™ fonksiyonu ve â€˜widthâ€™ deÄŸiÅŸkeni tanÄ±mlanÄ±p diÄŸer scss dosyalarÄ±ndan import edildi.
 
-Not: HTML/CSS tasarımı HTML_CSS_version klasörünün içerisinde bulunmaktadır.
+Not: HTML/CSS tasarÄ±mÄ± HTML_CSS_version klasÃ¶rÃ¼nÃ¼n iÃ§erisinde bulunmaktadÄ±r.
 
 
